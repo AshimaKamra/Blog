@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './NewPost.css';
-import 'axios';
 import Axios from 'axios';
 class NewPost extends Component{
   state={
@@ -8,6 +7,10 @@ class NewPost extends Component{
       content:'',
       author:''
   }
+  componentDidMount () {
+    console.log(this.props);
+}
+
   postDataHandler=()=>
   {
       const data={
